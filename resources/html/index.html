@@ -34,6 +34,9 @@
                     <li class="nav-item">
                         <a href="#">Contact</a>
                     </li>
+                    
+                    <img src="C:\Users\aemer\Documents\Portfolio Website\resources\images\sun-logo.png" id="icon">
+                 
                 </ul>
             </div>
         </div>
@@ -41,6 +44,9 @@
         <div class="intro">
             <h1 class = "hey">Hey, I'm Alex.</h1>
             <p class="desc">My passions include self-learning and channeling my problem-solving capabilities and creativity through programming.</p>
+        </div>
+        <div class="know-me-cont">
+            <a href="C:\Users\aemer\Documents\Portfolio Website\resources\html\about.html" class="know-me-button">Get to Know Me!</button>
         </div>
         <!--SCRIPT WORK-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -50,6 +56,17 @@
                     $('.navbar-collapse').toggleClass("collapse");
                 })
             })
+
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+                document.body.classList.toggle("light-mode");
+                if(document.body.classList.contains("light-mode")){
+                    icon.src="C:/Users/aemer/Documents/Portfolio Website/resources/images/moon-logo.png";
+                }
+                else{
+                    icon.src="C:/Users/aemer/Documents/Portfolio Website/resources/images/sun-logo.png";
+                }
+            }
         </script>
     </body>
 </html>

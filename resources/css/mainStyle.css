@@ -1,15 +1,20 @@
 :root{
-    --indigo: rgb(55, 48, 107);
-    --purple: rgb(102, 52, 127);
-    --hot-pink: rgb(158, 71, 132);
-    --peach: rgb(210, 118, 133);
-    --teal: rgb(0, 255, 202);
+    --bg-image: url('C:/Users/aemer/Documents/Portfolio Website/resources/images/black-brick-wall.jpg');
+    --text-color: white;
+    --bg-color: rgb(100,100,100);
+    
+}
+
+.light-mode{
+    --bg-image: url('C:/Users/aemer/Documents/Portfolio Website/resources/images/white-brick-wall.jpg');
+    --bg-color: rgb(208, 208, 208);
+    --text-color: black;
 }
 
 body{
     width:100%;
-    background-color: rgb(97, 97, 97);
-    background-image: url('C:/Users/aemer/Documents/Portfolio Website/resources/images/black-brick-wall.jpg');
+    background-color: var(--bg-color);
+    background-image: var(--bg-image);
     background-size: cover;
     background-blend-mode: multiply;
     margin:0%;
@@ -19,11 +24,19 @@ body{
     overflow-x: hidden;
     overflow-y: scroll;
     font-family: 'Source Sans Pro',sans-serif;
-    color: white;
+    color: var(--text-color);
 }
 
 div{
     display: grid;
+}
+
+#icon{
+    padding-top:5px;
+    padding-left:5px;
+    width:30px;
+    height:30px;
+    cursor: pointer;
 }
 
 .navbar-collapse{
