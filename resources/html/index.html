@@ -35,7 +35,7 @@
                         <a href="#">Contact</a>
                     </li>
                     
-                    <img src="C:\Users\aemer\Documents\Portfolio Website\resources\images\sun-logo.png" id="icon">
+                    <img src="C:\Users\aemer\Documents\Portfolio Website\resources\images\sun-logo.png" id="icon" class="theme-toggle">
                  
                 </ul>
             </div>
@@ -50,23 +50,7 @@
         </div>
         <!--SCRIPT WORK-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('.toggle-collapse').click(function(){
-                    $('.navbar-collapse').toggleClass("collapse");
-                })
-            })
-
-            var icon = document.getElementById("icon");
-            icon.onclick = function(){
-                document.body.classList.toggle("light-mode");
-                if(document.body.classList.contains("light-mode")){
-                    icon.src="C:/Users/aemer/Documents/Portfolio Website/resources/images/moon-logo.png";
-                }
-                else{
-                    icon.src="C:/Users/aemer/Documents/Portfolio Website/resources/images/sun-logo.png";
-                }
-            }
-        </script>
+        <script src="C:\Users\aemer\Documents\Portfolio Website\resources\js\main.js"></script>
+    
     </body>
 </html>
