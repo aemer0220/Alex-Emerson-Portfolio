@@ -1,0 +1,161 @@
+:root{
+    --bg-image: url('C:/Users/aemer/Documents/Portfolio Website/resources/images/black-brick-wall.jpg');
+    --text-color: white;
+    --bg-color: rgb(100,100,100);
+    
+}
+
+.light-mode{
+    --bg-image: url('C:/Users/aemer/Documents/Portfolio Website/resources/images/white-brick-wall.jpg');
+    --bg-color: rgb(208, 208, 208);
+    --text-color: black;
+}
+
+body{
+    width:100%;
+    background-color: var(--bg-color);
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-blend-mode: multiply;
+    margin:0%;
+    padding: 0%;
+    position: relative;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Source Sans Pro',sans-serif;
+    color: var(--text-color);
+}
+
+div{
+    display: grid;
+}
+
+#icon{
+    padding-top:5px;
+    padding-left:5px;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+.navbar-collapse{
+    display: grid;
+    justify-self:right;
+    float: right;
+    width: 400px;
+}
+
+.navbar{
+    display: inline-block;
+    width:100%;
+    padding-bottom: 5px;
+    background-color: rgba(0, 255, 202, .75);
+    color: black;
+}
+
+.navbar-logo{
+    float: left;
+    padding: 5px;
+    width: 54px;
+}
+
+
+.navbar-nav{
+    display: inline-flex;
+    width: 375px;
+    margin: 0%;
+    justify-self:right;
+    justify-content: space-between;
+    margin-right: 20px;
+    padding-top:10px;
+}
+
+.navbar .navbar-nav .nav-item{
+    display: inline;
+    list-style: none;
+}
+
+.navbar-nav .nav-item a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0.9em 0.7em;
+    color: black;
+}
+
+.navbar-nav .nav-item a:hover{
+    color: lightgray;
+}
+
+.toggle-collapse{
+    float: right;
+    justify-self: right;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+.toggle-collapse:hover{
+    color: lightgray;
+}
+
+@media screen and (max-width:456px){
+    body{
+        width: 100%;
+    }
+    .navbar-logo{
+        display: inline-block;
+        float: none;
+    }
+
+    .toggle-collapse{
+        display: inline-block;
+        color: black;
+        border: 1px solid black;
+    }
+
+    .navbar-nav{
+        display: block;
+        color: lightgray;
+        margin:0%;
+        width:100%;
+        padding: 0%;
+        justify-self: center;
+    }
+
+    .navbar .navbar-nav .nav-item{
+        display: block;
+        list-style: none;
+        width:100%;
+        border-top: 1px solid lightgray;
+    }
+
+    .navbar{
+        display:inline-block;
+        width:100%;
+        padding-bottom:0%;
+    }
+
+    .navbar-collapse{
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        height: 0vh;
+    }
+
+    .collapse{
+        height: 30vh;
+    }
+}
+
+*, *::before, *::after{
+    box-sizing:border-box;
+}
+
