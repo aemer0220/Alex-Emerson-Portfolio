@@ -1,12 +1,12 @@
 :root{
-    --bg-image: url('resources/images/black-brick-wall.jpg');
+    --bg-image: url('images/black-brick-wall.jpg');
     --text-color: white;
     --bg-color: rgb(100,100,100);
     
 }
 
 .light-mode{
-    --bg-image: url('resources/images/white-brick-wall.jpg');
+    --bg-image: url('images/white-brick-wall.jpg');
     --bg-color: rgb(208, 208, 208);
     --text-color: black;
 }
